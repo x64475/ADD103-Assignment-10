@@ -1,0 +1,107 @@
+body{
+    font-family: Arial;
+    margin:0;
+    box-sizing: border-box;
+}
+
+header{
+    background:black;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    width: 100%;
+}
+
+.container{
+    width:100%;
+    margin:auto;
+}
+
+.product-image{
+    width:100%;
+    margin-top: 1em; 
+}
+
+.product-info{
+    width:100%;
+    padding: 10px;
+}
+
+.product-info h2{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.product-image img{
+    width:100%;
+}
+
+button{
+    display: block;
+    margin: 10px auto;
+    padding:10px 20px;
+    font-size:16px;
+}
+
+.reviews{
+    width:80%;
+    margin:auto;
+    padding:20px;
+}
+
+.review{
+    border:1px solid #ccc;
+    padding:15px;
+    margin:10px 0;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+/* Tablet */
+@media screen and (min-width:600px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    .product-image
+    .product-info{
+        display: inline-block;
+        vertical-align: top;
+    }
+    .product-image{
+        width: 48%;
+    }
+    .product-info{
+        width: 48%;
+    }
+}
+
+/*PC*/
+
+@media screen and (min-width:992px){
+    .container{
+        max-width:900px;
+        margin: auto;
+    }
+    
+    .reviews{
+        width: 900px;
+    }
+    /* 2 per row*/
+    .review{
+        width: 40%;
+        display: inline-block;
+        margin: 10px 2%;
+        vertical-align: top;
+        
+    }
+}
